@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "scrolling-screenshot",
+  "version": "0.4.2",
+  "description": "Capture seamless full-page PNG screenshots in one click. Local, private, and open source.",
+  "action": {
+    "default_title": "scrolling-screenshot — Capture full page",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "permissions": ["activeTab", "scripting", "downloads"],
+  "host_permissions": []
+}
